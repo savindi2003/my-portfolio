@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Savindi Duleesha – Aspiring Software Engineer.">
+  <meta name="keywords" content="Software Engineer, Portfolio, Java, PHP, React Native, Projects, Savindi Duleesha">
+  <meta name="author" content="Savindi Duleesha">
+
+  <title>Savindi Duleesha</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // class-based dark mode
+    }
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    /* Bubble Background */
+    .bubbles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -150px;
+      background: rgba(255, 221, 87, 0.3);
+      border-radius: 50%;
+      animation: rise 25s infinite ease-in;
+    }
+
+    .bubble:nth-child(1) {
+      left: 20%;
+      width: 120px;
+      height: 120px;
+      animation-duration: 22s;
+    }
+
+    .bubble:nth-child(2) {
+      left: 40%;
+      width: 200px;
+      height: 200px;
+      animation-duration: 28s;
+      animation-delay: 4s;
+    }
+
+    .bubble:nth-child(3) {
+      left: 70%;
+      width: 150px;
+      height: 150px;
+      animation-duration: 26s;
+      animation-delay: 2s;
+    }
+
+    .bubble:nth-child(4) {
+      left: 85%;
+      width: 250px;
+      height: 250px;
+      animation-duration: 30s;
+      animation-delay: 6s;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+      }
+
+      50% {
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: translateY(-1200px) scale(1.2);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="text-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+
+  <!-- Bubble Background -->
+  <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header
+    class="fixed top-0 left-0 z-50 flex items-center justify-between w-full px-10 py-6 transition-colors duration-300 bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md">
+    <h1 class="text-xl font-semibold dark:text-white">Savindi Duleesha</h1>
+
+    <nav class="space-x-6 text-sm font-medium">
+      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Home</a>
+      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">About</a>
+      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Skills</a>
+      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Projects</a>
+      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Contact</a>
+    </nav>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle"
+      class="px-3 py-1 text-sm font-medium text-black transition bg-yellow-400 rounded-full shadow hover:bg-yellow-500 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600">
+      🌙 Dark
+    </button>
+  </header>
+
+
+
+
+  <!-- Project -->
+  <section id="projects" class="py-20 ">
+    <div class="max-w-6xl px-6 mx-auto">
+
+      <!-- Section Title -->
+      <div class="mb-10 text-center">
+        <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 md:text-5xl">
+          My <span class="text-yellow-500" data-aos="fade-down">Projects</span>
+        </h2>
+        <p class="mt-3 text-lg text-gray-600 dark:text-gray-300" data-aos="fade-down">
+          A few projects I've worked on – both academic and for clients.
+        </p>
+      </div>
+
+      <!-- Toggle Buttons -->
+      <div class="flex justify-center mb-10 space-x-4" data-aos="fade-down" data-aos-delay="100">
+        <button id="academicBtn"
+          class="px-6 py-2 font-semibold text-black transition bg-yellow-500 rounded-full shadow-md hover:bg-yellow-600">
+          Academic Projects
+        </button>
+        <button id="clientBtn"
+          class="px-6 py-2 font-semibold text-gray-700 transition bg-white rounded-full shadow-md hover:bg-gray-100">
+          Client Projects
+        </button>
+      </div>
+
+
+      <div id="academicProjects" class="grid gap-8 md:grid-cols-2">
+
+        <!-- Project 1 Tara fashion-->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in">
+
+          <!-- Project Images (Carousel only) -->
+          <div class="relative m-2 overflow-hidden" data-carousel>
+            <div class="flex transition-transform duration-500" data-slide-track>
+              <img src="assets/project/tarafashion/1.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/tarafashion/2.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/tarafashion/3.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/tarafashion/4.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/tarafashion/5.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+            </div>
+
+            <!-- Prev/Next -->
+            <button data-prev
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/40">‹</button>
+            <button data-next
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/40">›</button>
+
+            <!-- Overlay small title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              E-Commerce Platform
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Thara Fashion Store</h3>
+              <a href="https://github.com/savindi2003/tarafashion" target="_blank"
+                class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              This is a fully functional e-commerce web application built with HTML, CSS (Bootstrap), JavaScript, PHP,
+              and MySQL.
+              The system provides a seamless online shopping experience with features such as product listing, shopping
+              cart, secure checkout with
+              PayHere payment gateway integration, and automated email notifications. It also includes an advanced admin
+              panel where administrators
+              can manage products, customers, and orders efficiently. With its user-friendly interface and robust
+              backend, this project demonstrates
+              strong skills in full-stack web development and practical implementation of core e-commerce
+              functionalities.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">PHP
+              </span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">HTML</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">CSS</span>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 1 -->
+
+        <!-- Project 2 My bookings-->
+
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
+
+          <!-- Project Image -->
+          <div class="relative m-2">
+            <img src="assets/project/mybookings.png" alt="E-Commerce Project"
+              class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+            <!-- Small overlay title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              M-Commerce Platform
+            </div>
+          </div>
+
+          <!-- Project Details -->
+          <div class="p-6">
+            <!-- Title + Icons -->
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">My Bookings</h3>
+              <div class="flex space-x-3">
+
+                <!-- GitHub link -->
+                <a href="https://github.com/savindi2003/my-bookings" target="_blank"
+                  class="text-gray-500 transition hover:text-yellow-500">
+                  <img src="assets/github.png" alt="boostrap"
+                    class="w-8 h-8 transition-transform duration-300 hover:scale-110 dark:hidden">
+                  <img src="assets/github_dark.png" alt="boostrap"
+                    class="hidden w-8 h-8 transition-transform duration-300 hover:scale-110 dark:inline-block">
+                </a>
+              </div>
+            </div>
+
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              MyBookings is an m-commerce hotel booking Android application that enables users to search and book hotels
+              with ease. Built with Firebase Firestore as the backend, the app includes hotel listings, booking
+              management, and secure payments through PayHere. It integrates Google Maps SDK and Google Places API to
+              display and search hotels based on user location. Upon booking, the system generates a QR code (using
+              ZXing) that can be scanned via Google ML Kit for quick check-in. The app also supports real-time updates
+              and push notifications using Firebase Cloud Messaging, ensuring a smooth and efficient booking experience.
+            </p>
+
+            <!-- See More Button -->
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <!-- Tech Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java</span>
+
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Firebase
+                Firestore</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Firebase
+                Cloud Messaging</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                Maps SDK</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                Places API</span>
+
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">ZXing</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                ML Kit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 My bookings -->
+
+        <!-- Project 3 Freshmart-->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="200">
+
+          <!-- Project Images (Carousel only) -->
+          <div class="relative m-2 overflow-hidden" data-carousel>
+            <div class="flex transition-transform duration-500" data-slide-track>
+              <img src="assets/project/freshmart/1.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/freshmart/2.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/freshmart/3.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/freshmart/4.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+
+            </div>
+
+            <!-- Prev/Next -->
+            <button data-prev
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/40">‹</button>
+            <button data-next
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/40">›</button>
+
+            <!-- Overlay small title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              POS System
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">FreshMart</h3>
+              <a href="https://github.com/savindi2003/freshmart" target="_blank"
+                class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              FreshMart is a standalone POS (Point of Sale) system developed in Java SE (Ant build) with a Java Swing UI.
+              It uses MySQL for data storage and Jasper Reports for generating detailed reports. The application
+              includes comprehensive features such as inventory management, invoicing, goods receipt note (GRN)
+              handling, profit and loss calculation, and weight-based label generation with barcodes. It also supports
+              damage product management, product returns, and refunds. This project demonstrates strong skills in
+              building desktop applications with robust database integration, reporting, and practical business-oriented
+              functionalities.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java SE
+              </span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Jasper
+                Report</span>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 3 Freshmart-->
+
+        <!-- Project 4 Ezy Bit-->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="300">
+
+          <!-- Project Images (Carousel only) -->
+          <div class="relative m-2 overflow-hidden" data-carousel>
+            <div class="flex transition-transform duration-500" data-slide-track>
+              <img src="assets/project/ezybit/ezybit1.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/ezybit/ezybit2.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/ezybit/exybit3.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+
+            </div>
+
+            <!-- Prev/Next -->
+            <button data-prev
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/40">‹</button>
+            <button data-next
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/40">›</button>
+
+            <!-- Overlay small title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              Auction Web Application
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Ezy Bid</h3>
+              <a href="#" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              Ezy Bid is a real-time online auction web application developed using Java EE (EJB, JMS, WebSocket, and
+              JSP). The system allows users to register, log in, and participate in live auctions where bids are updated
+              instantly across all clients. It is designed to handle high concurrency through Stateless Session Beans,
+              while JMS Topics and Message Driven Beans ensure asynchronous bid broadcasting. Real-time updates are
+              delivered to the user interface via WebSocket integration, providing a seamless bidding experience. The
+              application follows a modular EAR architecture with separated Web, EJB, and Core modules, ensuring
+              scalability, maintainability, and high performance under heavy load.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                EE</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">EJB</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JMS</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">WebSocket</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JSP</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">HTML</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">CSS</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 4 Ezy Bit-->
+
+        <!-- Project 5 Chat me(expo) -->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="400">
+
+          <!-- Project Images (Carousel only) -->
+          <!-- Project Image -->
+          <div class="relative m-2">
+            <img src="assets/project/chatme.png" alt="E-Commerce Project"
+              class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+            <!-- Small overlay title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              Cross Platform Mobile App
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">ChatMe App</h3>
+              <a href="https://github.com/savindi2003/chatme-app-mobile" target="_blank"
+                class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              ChatMe is a real-time chat application developed with React Native (Expo) for the mobile front-end and
+              Java EE Servlets for the backend. The app enables users to chat with friends, send and delete messages,
+              and share images. It also displays the list of online users in real-time. Users can customize their
+              privacy settings to control who can see their mobile number, profile picture, and active status – choosing
+              between Everyone, Friends, or Only Me. The backend is powered by MySQL for secure data storage and handles
+              message delivery through Java EE server-side logic.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">React
+                Native
+              </span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Expo</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Rest
+                API</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                EE</span>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 5 Chat me(expo) -->
+
+        <!-- Project 6 National Bank-->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="500">
+
+          <!-- Project Images (Carousel only) -->
+          <div class="relative m-2 overflow-hidden" data-carousel>
+            <div class="flex transition-transform duration-500" data-slide-track>
+              <img src="assets/project/nationalBak/1.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/nationalBak/2.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/nationalBak/3.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/nationalBak/4.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+
+            </div>
+
+            <!-- Prev/Next -->
+            <button data-prev
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/40">‹</button>
+            <button data-next
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/40">›</button>
+
+            <!-- Overlay small title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              Core Banking System
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">National Bank - Banking System</h3>
+              <a href="https://github.com/savindi2003/nationalbank-system" target="_blank"
+                class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              The National Bank Core Banking System is developed using Enterprise JavaBeans (EJB) with a strong focus on
+              EJB Timer Services to automate time-sensitive banking operations. The system supports multiple user roles
+              including Bank Teller, Customer Service Officer, Admin, and Super Admin, each with secure role-based
+              access.
+              <br /><br />
+              Core features include automated scheduled fund transfers, monthly interest calculation, daily balance
+              updates, and automatic transaction report generation at scheduled intervals. Transaction consistency and
+              reliability are maintained using Container-Managed Transactions, while Java Transaction API (JTA) ensures
+              atomic operations for global transactions like fund transfers.
+              <br /><br />
+              A robust security architecture is implemented using JAAS authentication and role-based authorization with
+              Java EE security annotations (@RolesAllowed, @PermitAll, @DenyAll). To ensure reliability, the system uses
+              persistent timers, connection pooling, and audit logging, making it highly scalable, secure, and resilient
+              for 24×7 banking operations.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                EE</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">EJB</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">EJB
+                Timer Service</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                Transaction API</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JAAS
+                Security</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 6 National Bank-->
+
+        <!-- Project 7 Shuespere-->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="600">
+
+          <!-- Project Images (Carousel only) -->
+          <div class="relative m-2 overflow-hidden" data-carousel>
+            <div class="flex transition-transform duration-500" data-slide-track>
+              <img src="assets/project/shoueshepara/1.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/shoueshepara/2.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/shoueshepara/3.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+
+            </div>
+
+            <!-- Prev/Next -->
+            <button data-prev
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/40">‹</button>
+            <button data-next
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/40">›</button>
+
+            <!-- Overlay small title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              Java E-Commerce Platform
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">ShoeSpere</h3>
+              <a href="#" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              ShoeSpere is a full-featured e-commerce web application developed with Java EE 7. The system provides core
+              shopping functionalities including product listing, shopping cart, session-based cart (available even for
+              non-logged-in users), checkout process, and PayHere payment gateway integration for secure online
+              transactions.
+              <br /><br />
+              The backend is built with Java EE Servlets and Hibernate ORM to manage database operations efficiently,
+              ensuring data persistence and scalability. On the frontend, HTML, CSS (a template) and JavaScript are used
+              to deliver
+              a responsive and user-friendly shopping experience. Session management is implemented to allow users to
+              add items to the cart before authentication, and seamlessly continue after logging in.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                EE</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Servlets</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Hibernate
+                ORM</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">PayHere
+                API</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 7 ShueSpera-->
+
+        <!-- Project 8 hydrogrow -->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="700">
+
+          <!-- Project Image -->
+          <div class="relative m-2">
+            <img src="assets/project/hudrogrow1.png" alt="E-Commerce Project"
+              class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+            <!-- Small overlay title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              IoT-based plant water monitoring system
+            </div>
+          </div>
+
+          <!-- Project Details -->
+          <div class="p-6">
+            <!-- Title + Icons -->
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">HydroGrow</h3>
+              <div class="flex space-x-3">
+
+                <!-- GitHub link -->
+                <a href="https://github.com/savindi2003/hydrogrow-app" target="_blank"
+                  class="text-gray-500 transition hover:text-yellow-500">
+                  <img src="assets/github.png" alt="boostrap"
+                    class="w-8 h-8 transition-transform duration-300 hover:scale-110 dark:hidden">
+                  <img src="assets/github_dark.png" alt="boostrap"
+                    class="hidden w-8 h-8 transition-transform duration-300 hover:scale-110 dark:inline-block">
+                </a>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              HydroGrow is an IoT-based plant water monitoring system that integrates hardware sensors, a backend
+              server, and a mobile application to provide real-time plant health insights. The system consists of three
+              main components:
+              <br /><br />
+              🌱 Arduino + ESP32 – Collects soil moisture levels through sensors and transmits the data to the backend.
+              <br />
+              ☕ Java Server (REST APIs) – Handles sensor data processing, stores data in the database, and provides APIs
+              for mobile access.
+              <br />
+              📱 React Native App – User-friendly mobile interface to monitor soil moisture status, view plant health in
+              real time, and track historical data stored in the backend.
+              <br /><br />
+              This system allows users to continuously monitor their plants’ water requirements, ensuring efficient
+              plant care through real-time IoT data collection and visualization.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <!-- Tech Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">React
+                Native
+              </span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Arduino</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">ESP
+                32</span>
+
+            </div>
+          </div>
+        </div>
+        <!-- Project 8 hydrowgrow -->
+
+        <!-- Project 9 nootbook -->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="800">
+
+          <!-- Project Image -->
+          <div class="relative m-2">
+            <img src="assets/project/nootbook.png" alt="E-Commerce Project"
+              class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+            <!-- Small overlay title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              Android App
+            </div>
+          </div>
+
+          <!-- Project Details -->
+          <div class="p-6">
+            <!-- Title + Icons -->
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Note Book App</h3>
+              <div class="flex space-x-3">
+
+                <!-- GitHub link -->
+                <a href="https://github.com/savindi2003/notebook-app" target="_blank"
+                  class="text-gray-500 transition hover:text-yellow-500">
+                  <img src="assets/github.png" alt="boostrap"
+                    class="w-8 h-8 transition-transform duration-300 hover:scale-110 dark:hidden">
+                  <img src="assets/github_dark.png" alt="boostrap"
+                    class="hidden w-8 h-8 transition-transform duration-300 hover:scale-110 dark:inline-block">
+                </a>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              Note Book is a lightweight Android application that allows users to create, save, and manage personal
+              notes directly on their mobile device. The app uses SQLite as its local database, ensuring fast and
+              reliable offline data storage without requiring internet access. With a simple and user-friendly
+              interface, users can quickly add and organize notes, making it an efficient tool for everyday personal
+              use.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <!-- Tech Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Android
+              </span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">SQLite</span>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- Project 9 nootbook -->
+
+        <!-- Project 10 Adyapana Ins-->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl"data-aos="zoom-in" data-aos-delay="900">
+
+          <!-- Project Images (Carousel only) -->
+          <div class="relative m-2 overflow-hidden" data-carousel>
+            <div class="flex transition-transform duration-500" data-slide-track>
+              <img src="assets/project/adyapanaInstitute/1.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/adyapanaInstitute/2.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/adyapanaInstitute/3.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+
+            </div>
+
+            <!-- Prev/Next -->
+            <button data-prev
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/40">‹</button>
+            <button data-next
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/40">›</button>
+
+            <!-- Overlay small title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              Student Management System
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Adyapana Institute</h3>
+              <a href="https://github.com/savindi2003/adyapana-institute" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+            
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              The Student Management System for Adyapana Institute is a Java SE standalone application developed with Swing for the graphical user interface and MySQL for the database. This system is designed to manage various aspects of an A/L tuition center, including student registration, class enrollment, attendance tracking, fee management, and teacher assignment. It allows administrators to add new students, assign them to classes, record daily attendance, monitor class fees, and allocate teachers to specific classes. The application uses JDBC to connect to the MySQL database, ensuring efficient storage and retrieval of data. Its modular structure separates the database operations, business logic, and user interface, providing a user-friendly and organized solution for managing all administrative tasks of the institute.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                SE</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Swing</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JDBC</span>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 10 Adyapana Ins-->
+
+        <!-- Project 11 Globe med-->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="1000">
+
+          <!-- Project Images (Carousel only) -->
+          <div class="relative m-2 overflow-hidden" data-carousel>
+            <div class="flex transition-transform duration-500" data-slide-track>
+
+              <img src="assets/project/globemed/1.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/globemed/2.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/globemed/3.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/globemed/4.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+
+            </div>
+
+            <!-- Prev/Next -->
+            <button data-prev
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/40">‹</button>
+            <button data-next
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/40">›</button>
+
+            <!-- Overlay small title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              Desktop Application
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">GlobeMed</h3>
+              <a href="https://github.com/savindi2003/globemed" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+            
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              The Healthcare Management System for Globe Med is a Java SE desktop application designed to streamline the operations of a healthcare organization. The system implements object-oriented design patterns for modular and maintainable code. It provides comprehensive functionalities including patient record management, appointment scheduling, billing and insurance claim processing, report generation using JasperReports, and security management to ensure data confidentiality. The application uses MySQL as the backend database, and its structured design allows healthcare staff to efficiently manage patient information, track appointments, handle billing, and generate detailed reports while maintaining high standards of security and reliability.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                SE</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Swing</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Jasper Reports</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">OODP</span>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 11 Globe med-->
+
+        <!-- Project 12 Jungle run-->
+        <div
+          class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="1100">
+
+          <!-- Project Images (Carousel only) -->
+          <div class="relative m-2 overflow-hidden" data-carousel>
+            <div class="flex transition-transform duration-500" data-slide-track>
+              <img src="assets/project/gunglerun/1.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/gunglerun/2.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              <img src="assets/project/gunglerun/3.png"
+                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+
+
+            </div>
+
+            <!-- Prev/Next -->
+            <button data-prev
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/40">‹</button>
+            <button data-next
+              class="absolute p-2 text-white -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/40">›</button>
+
+            <!-- Overlay small title -->
+            <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
+              Web Game
+            </div>
+          </div>
+
+          <!-- Project Details (Separate, not sliding) -->
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Jungle Run Game</h3>
+              <a href="#" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
+                <img src="assets/github.png" class="w-8 h-8 dark:hidden">
+                <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
+              </a>
+            </div>
+            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              data-desc>
+              This is a simple running game developed using HTML, CSS, and JavaScript. The game features sprite sheet animations for smooth character movements and allows the player to change the background dynamically. The main objective is to avoid obstacles while running, and the game ends with a game over whenever the character collides with an object. The project demonstrates interactive web development skills, including animation, event handling, and dynamic UI updates, making it a fun and engaging application for users.
+            </p>
+
+            <button class="mb-4 text-sm font-semibold text-yellow-600 hover:underline" data-toggle>
+              See More
+            </button>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Spritesheet Animation
+                </span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">HTML</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">CSS</span>
+              <span
+                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 4 Ezy Bit-->
+
+
+
+      </div>
+      <!-- Client Projects (Initially Hidden) -->
+      <div id="clientProjects" class="grid hidden gap-8 md:grid-cols-2">
+
+        <!-- Add client Projects -->
+
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer
+    class="py-6 text-center text-gray-600 transition-colors duration-300 bg-gray-100 dark:bg-gray-800 dark:text-gray-300">
+    <p class="text-sm font-medium">&copy; 2025 Savindi Duleesha. All rights reserved.</p>
+  </footer>
+
+
+  
+<script>
+  AOS.init({ duration: 800 });
+</script>
+
+
+  <!-- see more -->
+  <script>
+    document.querySelectorAll("[data-toggle]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const desc = btn.previousElementSibling;
+        desc.classList.toggle("line-clamp-3");
+        btn.textContent = desc.classList.contains("line-clamp-3") ? "See More" : "See Less";
+      });
+    });
+  </script>
+  <!-- see more -->
+
+  <!-- Image -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-carousel]").forEach((carouselContainer) => {
+        const track = carouselContainer.querySelector("[data-slide-track]");
+        const slides = track.children;
+        const total = slides.length;
+        let idx = 0;
+
+        const update = () => {
+          track.style.transform = `translateX(${-idx * 100}%)`;
+        };
+
+        // Prev / Next buttons
+        const prevBtn = carouselContainer.querySelector("[data-prev]");
+        const nextBtn = carouselContainer.querySelector("[data-next]");
+
+        if (prevBtn) prevBtn.addEventListener("click", () => {
+          idx = (idx - 1 + total) % total;
+          update();
+        });
+        if (nextBtn) nextBtn.addEventListener("click", () => {
+          idx = (idx + 1) % total;
+          update();
+        });
+
+        // Autoplay
+        setInterval(() => {
+          idx = (idx + 1) % total;
+          update();
+        }, 4000);
+
+        update(); // init
+      });
+    });
+  </script>
+
+  <!-- Image -->
+
+  <!-- Dark Mode Script -->
+  <script>
+  const toggleBtn = document.getElementById("darkModeToggle");
+  const html = document.documentElement;
+
+  // Page load වෙනකොට preference load කරන්න
+  if (localStorage.getItem("theme") === "dark") {
+    html.classList.add("dark");
+    toggleBtn.textContent = "☀️ Light";
+  } else {
+    toggleBtn.textContent = "🌙 Dark";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    html.classList.toggle("dark");
+
+    if (html.classList.contains("dark")) {
+      toggleBtn.textContent = "☀️ Light";
+      localStorage.setItem("theme", "dark"); // save preference
+    } else {
+      toggleBtn.textContent = "🌙 Dark";
+      localStorage.setItem("theme", "light"); // save preference
+    }
+  });
+</script>
+
+  <!-- FontAwesome for icons -->
+  <script>
+    const academicBtn = document.getElementById("academicBtn");
+    const clientBtn = document.getElementById("clientBtn");
+    const academicProjects = document.getElementById("academicProjects");
+    const clientProjects = document.getElementById("clientProjects");
+
+    academicBtn.addEventListener("click", () => {
+      academicProjects.classList.remove("hidden");
+      clientProjects.classList.add("hidden");
+      academicBtn.classList.add("bg-yellow-500", "text-black");
+      clientBtn.classList.remove("bg-yellow-500", "text-black");
+      clientBtn.classList.add("bg-white", "text-gray-700");
+    });
+
+    clientBtn.addEventListener("click", () => {
+      clientProjects.classList.remove("hidden");
+      academicProjects.classList.add("hidden");
+      clientBtn.classList.add("bg-yellow-500", "text-black");
+      academicBtn.classList.remove("bg-yellow-500", "text-black");
+      academicBtn.classList.add("bg-white", "text-gray-700");
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
