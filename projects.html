@@ -109,23 +109,77 @@
 
   <!-- Navbar -->
   <header
-    class="fixed top-0 left-0 z-50 flex items-center justify-between w-full px-10 py-6 transition-colors duration-300 bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md">
-    <h1 class="text-xl font-semibold dark:text-white">Savindi Duleesha</h1>
+      class="fixed top-0 left-0 z-50 flex items-center justify-between w-full px-6 py-4 transition-colors duration-300 bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md">
+      
 
-    <nav class="space-x-6 text-sm font-medium">
-      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Home</a>
-      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">About</a>
-      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Skills</a>
-      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Projects</a>
-      <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Contact</a>
-    </nav>
+      <!-- Logo / Name -->
+      <h1 class="text-xs sm:text-sm font-semibold md:text-xl dark:text-white truncate max-w-[200px] sm:max-w-[300px]">
+        Savindi Duleesha
+      </h1>
 
-    <!-- Dark Mode Toggle -->
-    <button id="darkModeToggle"
-      class="px-3 py-1 text-sm font-medium text-black transition bg-yellow-400 rounded-full shadow hover:bg-yellow-500 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600">
-      🌙 Dark
-    </button>
-  </header>
+      <!-- Desktop Nav -->
+      <nav class="hidden space-x-6 text-sm font-medium md:flex">
+        <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Home</a>
+        <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">About</a>
+        <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Skills</a>
+        <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Projects</a>
+        <a href="index.html" class="hover:text-yellow-500 dark:text-gray-300">Contact</a>
+      </nav>
+
+      <!-- Right side -->
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle" aria-label="Toggle Dark Mode"
+          class="px-2 py-1 text-xs font-medium text-black transition bg-yellow-400 rounded-full shadow sm:px-3 sm:text-sm hover:bg-yellow-500 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600">
+          🌙
+          <span class="hidden sm:inline">Dark</span>
+        </button>
+
+        <!-- Hamburger -->
+        <button id="menuToggle" aria-label="Open Menu"
+          class="text-xl sm:text-2xl md:hidden focus:outline-none dark:text-white">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    
+
+    <!-- Mobile Sidebar Nav -->
+    <div id="mobileMenu"
+      class="fixed top-0 left-0 w-64 h-full transition-transform duration-300 transform -translate-x-full z-[60] bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md md:hidden">
+      <div class="flex flex-col items-start p-6 space-y-6 text-sm font-medium">
+        <button id="closeMenu" class="self-end text-2xl dark:text-white"></button>
+        <a href="index.html" class="nav-link hover:text-yellow-500 dark:text-gray-300">Home</a>
+        
+      </div>
+    </div>
+
+    <!--  -->
+
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const navLinks = document.querySelectorAll("#mobileMenu .nav-link");
+
+      // Toggle sidebar when ☰ button clicked
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("-translate-x-full");
+      });
+
+      // Close sidebar (✖ button)
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("-translate-x-full");
+      });
+
+      // Close sidebar when clicking a link
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("-translate-x-full");
+        });
+      });
+    </script>
 
 
 
