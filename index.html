@@ -28,6 +28,8 @@
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
   <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="module" src="https://unpkg.com/@lottiefiles/dotlottie-wc@latest/dist/dotlottie-wc.js"></script>
+
 
 
 
@@ -106,8 +108,8 @@
 </head>
 
 <body class="w-screen overflow-x-hidden text-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
-<main class="flex-grow">
-  
+  <main class="flex-grow">
+
 
     <!-- Bubble Background -->
     <div class="bubbles">
@@ -119,47 +121,54 @@
 
 
 
-    
+
     <!-- <header
       class="fixed top-0 left-0 z-50 flex items-center justify-between w-full px-6 py-4 transition-colors duration-300 bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md">
        -->
 
-       <header class="fixed top-0 left-0 z-50 w-full transition-colors duration-300 bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md">
-  <div class="flex items-center justify-between max-w-6xl px-6 py-4 mx-auto">
-   
+    <!-- <header class="fixed top-0 left-0 z-50 w-full transition-colors duration-300 bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md">
+  <div class="flex items-center justify-between max-w-6xl px-6 py-4 mx-auto"> -->
 
-      <!-- Logo / Name -->
-      <h1 class="text-xs sm:text-sm font-semibold md:text-xl dark:text-white truncate max-w-[200px] sm:max-w-[300px]">
-        Savindi Duleesha
-      </h1>
+    <!-- <header
+      class="fixed top-0 left-0 z-50 w-full transition-colors duration-300 bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md">
+      <div class="flex items-center justify-between max-w-6xl px-6 py-4 mx-auto"> -->
 
-      <!-- Desktop Nav -->
-      <nav class="hidden space-x-6 text-sm font-medium md:flex">
-        <a href="#home" class="hover:text-yellow-500 dark:text-gray-300">Home</a>
-        <a href="#about" class="hover:text-yellow-500 dark:text-gray-300">About</a>
-        <a href="#skills" class="hover:text-yellow-500 dark:text-gray-300">Skills</a>
-        <a href="#projects" class="hover:text-yellow-500 dark:text-gray-300">Projects</a>
-        <a href="#contact" class="hover:text-yellow-500 dark:text-gray-300">Contact</a>
-      </nav>
+        <header
+        class="fixed top-0 left-0 z-50 flex items-center justify-between w-full px-6 py-4 transition-colors duration-300 bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-md">
+      
 
-      <!-- Right side -->
-      <div class="flex items-center space-x-2 sm:space-x-3">
-        <!-- Dark Mode Toggle -->
-        <button id="darkModeToggle" aria-label="Toggle Dark Mode"
-          class="px-2 py-1 text-xs font-medium text-black transition bg-yellow-400 rounded-full shadow sm:px-3 sm:text-sm hover:bg-yellow-500 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600">
-          🌙
-          <span class="hidden sm:inline">Dark</span>
-        </button>
+        <!-- Logo / Name -->
+        <h1 class="text-xs sm:text-sm font-semibold md:text-xl dark:text-white truncate max-w-[200px] sm:max-w-[300px]">
+          Savindi Duleesha
+        </h1>
 
-        <!-- Hamburger -->
-        <button id="menuToggle" aria-label="Open Menu"
-          class="text-xl sm:text-2xl md:hidden focus:outline-none dark:text-white">
-          ☰
-        </button>
-      </div>
+        <!-- Desktop Nav -->
+        <nav class="hidden space-x-6 text-sm font-medium md:flex">
+          <a href="#home" class="hover:text-yellow-500 dark:text-gray-300">Home</a>
+          <a href="#about" class="hover:text-yellow-500 dark:text-gray-300">About</a>
+          <a href="#skills" class="hover:text-yellow-500 dark:text-gray-300">Skills</a>
+          <a href="#projects" class="hover:text-yellow-500 dark:text-gray-300">Projects</a>
+          <a href="#contact" class="hover:text-yellow-500 dark:text-gray-300">Contact</a>
+        </nav>
+
+        <!-- Right side -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <!-- Dark Mode Toggle -->
+          <button id="darkModeToggle" aria-label="Toggle Dark Mode"
+            class="px-2 py-1 text-xs font-medium text-black transition bg-yellow-400 rounded-full shadow sm:px-3 sm:text-sm hover:bg-yellow-500 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600">
+            🌙
+            <span class="hidden sm:inline">Dark</span>
+          </button>
+
+          <!-- Hamburger -->
+          <button id="menuToggle" aria-label="Open Menu"
+            class="text-xl sm:text-2xl md:hidden focus:outline-none dark:text-white">
+            ☰
+          </button>
+        <!-- </div> -->
     </header>
 
-    
+
 
     <!-- Mobile Sidebar Nav -->
     <div id="mobileMenu"
@@ -167,7 +176,7 @@
       <div class="flex flex-col items-start p-6 space-y-6 text-sm font-medium">
         <button id="closeMenu" class="self-end text-2xl dark:text-white"></button>
         <a href="#home" class="nav-link hover:text-yellow-500 dark:text-gray-300">Home</a>
-        <a href="#about" class="nav-link hover:text-yellow-500 dark:text-gray-300">About</a>
+        <a href="#about-mobile" class="nav-link hover:text-yellow-500 dark:text-gray-300">About</a>
         <a href="#skills" class="nav-link hover:text-yellow-500 dark:text-gray-300">Skills</a>
         <a href="#projects" class="nav-link hover:text-yellow-500 dark:text-gray-300">Projects</a>
         <a href="#contact" class="nav-link hover:text-yellow-500 dark:text-gray-300">Contact</a>
@@ -202,8 +211,9 @@
 
 
     <!-- Hero Section -->
-    <section id="home"
-      class="flex flex-col items-center justify-center min-h-screen px-2 py-16 sm:px-6 md:px-10 lg:px-20 md:flex-row">
+   <section id="home"
+      class="flex flex-col items-center justify-center min-h-screen px-2 py-16 sm:px-6 md:px-10 lg:px-40 md:flex-row">
+
       <div class="order-2 w-full mt-10 text-center md:w-1/2 md:order-1 md:mt-0 md:text-left">
 
         <p class="text-lg tracking-wider text-gray-600 uppercase sm:text-xl dark:text-gray-300" data-aos="fade-up">Hello
@@ -261,30 +271,44 @@
         </div>
       </div>
 
-      <div class="flex justify-center order-1 w-full md:w-1/2 md:order-2">
-        <div class="w-full max-w-md sm:max-w-lg md:max-w-full" data-aos="fade-up">
-          <dotlottie-wc src="https://lottie.host/dc897f39-c845-4a94-9d4d-d9b09db8bf35/0hnlfmcPSn.lottie"
-            style="width: 100%; height: auto;" autoplay loop></dotlottie-wc>
-          <!-- <img src="assets/programmer-working-desk.png" alt="About Me" style="width: 100%; height: auto;" > -->
-        </div>
-      </div>
+      <!-- Light Mode Animation -->
+     <div class="flex justify-center order-1 w-full md:w-1/2 md:order-2">
+   <div class="w-full max-w-md sm:max-w-lg md:max-w-full relative aspect-[4/3]" data-aos="fade-up" data-aos-delay="200"> <!-- fixed height -->
+    <!-- Light Mode -->
+    <dotlottie-wc 
+       src="https://lottie.host/a78e84f3-6e61-446b-9c3d-7c7c37840ed4/eHcTT3grhB.lottie"
+       style="width: 100%; height: 100%;" 
+       background="transparent" autoplay loop
+       class="absolute inset-0 transition-opacity duration-300 opacity-100 dark:opacity-0">
+    </dotlottie-wc>
+
+    <!-- Dark Mode -->
+    <dotlottie-wc 
+       src="https://lottie.host/0fc5f73f-0bfa-4573-b6ae-d48ed79f32ba/TYIKw0DmvQ.lottie"
+       style="width: 100%; height: 100%;" 
+       background="transparent" autoplay loop
+       class="absolute inset-0 transition-opacity duration-300 opacity-0 dark:opacity-100">
+    </dotlottie-wc>
+  </div>
+</div>
+
+
+
     </section>
 
 
 
-    <!-- About Section -->
-    <section id="about" class="px-4 py-12 scroll-mt-32 sm:px-6 md:px-10 lg:px-20">
+    <!-- About Section (Desktop & Laptop Only: md↑ visible) -->
+    <section id="about" class="hidden px-4 py-12 md:block scroll-mt-32 sm:px-6 md:px-10 lg:px-20">
       <div class="flex flex-col items-center max-w-6xl mx-auto md:flex-row md:space-x-10">
         <div class="w-full mb-10 text-center md:w-1/3" data-aos="fade-right">
-
           <img src="assets/image1.jpg" alt="About Me"
             class="object-cover w-48 h-48 mx-auto rounded-full shadow-lg sm:rounded-2xl md:w-full md:h-auto md:rounded-2xl">
         </div>
 
         <div class="w-full text-center md:w-2/3 md:text-left">
-
-          <h2 class="mb-5 text-4xl font-bold text-gray-800 dark:text-gray-300" data-aos="fade-left">About Me</h2>
-
+          <h2 class="mb-5 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100" data-aos="fade-left">
+            About Me</h2>
           <p class="max-w-xl mx-auto mb-6 text-sm text-justify text-gray-600 sm:text-base md:text-lg dark:text-gray-300 md:max-w-full md:mx-0"
             data-aos="fade-left" data-aos-delay="100">
             Hi! I'm <span class="font-semibold text-yellow-500">Savindi</span>,
@@ -300,39 +324,69 @@
       </div>
     </section>
 
+    <!-- About Section (Mobile Only: sm↓ visible) -->
+    <section id="about-mobile" class="block px-4 py-12 md:hidden scroll-mt-20 sm:px-6">
+      <div class="max-w-xl mx-auto text-center">
+        <img src="assets/image1.jpg" alt="About Me"
+          class="object-cover w-40 h-40 mx-auto mb-6 rounded-full shadow-lg sm:w-48 sm:h-48 sm:rounded-2xl"
+          data-aos="fade-down">
+
+        <h2 class="mb-5 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100" data-aos="fade-down">
+          About Me</h2>
+
+        <p class="text-base text-justify text-gray-600 sm:text-base dark:text-gray-300" data-aos="fade-down">
+          Hi! I'm <span class="font-semibold text-yellow-500">Savindi</span>,
+          an aspiring <span class="font-semibold">Software Engineer</span> passionate
+          about building modern, creative, and user-friendly web applications.
+          I love learning new technologies and designing solutions that make a positive impact.
+          <br /><br />I have hands-on experience with Java, PHP, Android, and
+          React Native projects through my coursework and personal projects. My goal is to become a full-stack
+          developer, specializing in building scalable web and mobile applications.
+          I am a fast learner, a good team player, and eager to apply my knowledge in a professional environment.
+        </p>
+      </div>
+    </section>
+
+
     <!-- Education Section -->
     <section id="education" class="px-4 py-20 sm:px-6 md:px-10 lg:px-20">
       <div class="max-w-6xl mx-auto">
-        <h2 class="mb-10 text-4xl font-bold text-gray-800 dark:text-gray-100" data-aos="fade-down">🎓 Education</h2>
+        <h2 class="mb-10 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-gray-100"
+          data-aos="fade-down">🎓 Education</h2>
 
         <div class="space-y-8 text-gray-700">
 
           <!-- BSc (Hons) -->
           <div class="p-6 bg-white shadow-md dark:bg-gray-800 rounded-2xl" data-aos="fade-down" data-aos-delay="100">
-            <p class="mb-1 text-xl font-semibold dark:text-gray-100">BSc (Hons) in Software Engineering (Top-Up)</p>
-            <p class=" dark:text-gray-100">📌 Birmingham City University (UK) – Java Institute for Advanced Technology
+            <p class="mb-1 text-lg font-semibold md:text-xl dark:text-gray-100">BSc (Hons) in Software Engineering
+              (Top-Up)</p>
+            <p class="text-sm md:text-base dark:text-gray-100">📌 Birmingham City University (UK) – Java Institute for
+              Advanced Technology
             </p>
-            <p class="text-sm text-gray-500 dark:text-gray-500">2025 – Present</p>
+            <p class="text-xs font-semibold text-yellow-500 md:text-sm dark:text-gray-500 text-end">2025 – Present</p>
           </div>
 
           <!-- Level 5 Diploma -->
           <div class="p-6 bg-white shadow-md dark:bg-gray-800 rounded-2xl" data-aos="fade-down" data-aos-delay="200">
-            <p class="mb-1 text-xl font-semibold dark:text-gray-100">Level 5 Professional Higher Diploma in Software
+            <p class="mb-1 text-lg font-semibold md:text-xl dark:text-gray-100">Level 5 Professional Higher Diploma in
+              Software
               Engineering</p>
-            <p class=" dark:text-gray-100">📌 Java Institute for Advanced Technology (Awarded by UK Awards | Skills &
+            <p class="text-sm md:text-base dark:text-gray-100">📌 Java Institute for Advanced Technology (Awarded by UK
+              Awards | Skills &
               Education Group Awards)</p>
-            <p class="text-sm text-gray-500 dark:text-gray-500">2023 – 2024</p>
+            <p class="text-xs font-semibold text-yellow-500 md:text-sm dark:text-gray-500 text-end">2023 – 2024</p>
           </div>
 
           <!-- Level 4 Diploma -->
           <div class="p-6 bg-white shadow-md rounded-2xl dark:bg-gray-800 " data-aos="fade-down" data-aos-delay="300">
 
-            <p class="mb-1 text-xl font-semibold dark:text-gray-100">Level 4 Professional Diploma in Software
+            <p class="mb-1 text-lg font-semibold md:text-xl dark:text-gray-100">Level 4 Professional Diploma in Software
               Engineering
             </p>
-            <p class="dark:text-gray-100">📌 Java Institute for Advanced Technology (Awarded by UK Awards | Skills &
+            <p class="text-sm dark:text-gray-100 md:text-base">📌 Java Institute for Advanced Technology (Awarded by UK
+              Awards | Skills &
               Education Group Awards)</p>
-            <p class="text-sm text-gray-500 dark:text-gray-500">2022 – 2023</p>
+            <p class="text-xs font-semibold text-yellow-500 md:text-sm dark:text-gray-500 text-end">2022 – 2023</p>
           </div>
 
         </div>
@@ -349,7 +403,7 @@
           <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 md:text-5xl">
             Tech <span class="text-yellow-500">Stack</span>
           </h2>
-          <p class="max-w-2xl mx-auto mt-4 text-lg text-gray-600 dark:text-gray-300">
+          <p class="max-w-2xl mx-auto mt-4 text-base text-gray-600 md:text-lg dark:text-gray-300">
             Passionate about building clean, efficient, and scalable solutions.
             Here’s what I work with most often. Here are the technologies and tools I work with to bring ideas to life.
           </p>
@@ -525,7 +579,7 @@
           <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 md:text-5xl">
             My <span class="text-yellow-500">Projects</span>
           </h2>
-          <p class="mt-3 text-lg text-gray-600 dark:text-gray-300">
+          <p class="mt-3 text-base text-gray-600 md:text-lg dark:text-gray-300">
             A few projects I've worked on – both academic and for clients.
           </p>
         </div>
@@ -533,11 +587,11 @@
         <!-- Toggle Buttons -->
         <div class="flex justify-center mb-10 space-x-4" data-aos="fade-down">
           <button id="academicBtn"
-            class="px-6 py-2 font-semibold text-black transition bg-yellow-500 rounded-full shadow-md hover:bg-yellow-600">
+            class="px-6 py-2 text-sm font-semibold text-black transition bg-yellow-500 rounded-full shadow-md md:text-base hover:bg-yellow-600">
             Academic Projects
           </button>
           <button id="clientBtn"
-            class="px-6 py-2 font-semibold text-gray-700 transition bg-white rounded-full shadow-md hover:bg-gray-100">
+            class="px-6 py-2 text-sm font-semibold text-gray-700 transition bg-white rounded-full shadow-md md:text-base hover:bg-gray-100">
             Client Projects
           </button>
         </div>
@@ -546,7 +600,7 @@
         <div id="academicProjects" class="grid gap-8 md:grid-cols-2">
 
 
-          <!-- Project 1 -->
+          <!-- Project 1 Tara fashion-->
           <div
             class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl"
             data-aos="zoom-in">
@@ -555,15 +609,15 @@
             <div class="relative m-2 overflow-hidden" data-carousel>
               <div class="flex transition-transform duration-500" data-slide-track>
                 <img src="assets/project/tarafashion/1.png"
-                  class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                  class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
                 <img src="assets/project/tarafashion/2.png"
-                  class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                  class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
                 <img src="assets/project/tarafashion/3.png"
-                  class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                  class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
                 <img src="assets/project/tarafashion/4.png"
-                  class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                  class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
                 <img src="assets/project/tarafashion/5.png"
-                  class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                  class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               </div>
 
               <!-- Prev/Next -->
@@ -581,14 +635,14 @@
             <!-- Project Details (Separate, not sliding) -->
             <div class="p-6">
               <div class="flex items-center justify-between mb-3">
-                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Thara Fashion Store</h3>
+                <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">Thara Fashion Store</h3>
                 <a href="https://github.com/savindi2003/tarafashion" target="_blank"
                   class="text-gray-500 transition hover:text-yellow-500">
                   <img src="assets/github.png" class="w-8 h-8 dark:hidden">
                   <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
                 </a>
               </div>
-              <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
                 data-desc>
                 This is a fully functional e-commerce web application built with HTML, CSS (Bootstrap), JavaScript, PHP,
                 and MySQL.
@@ -610,16 +664,16 @@
 
               <div class="flex flex-wrap gap-2">
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">PHP
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">PHP
                 </span>
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JavaScript</span>
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">MySQL</span>
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">HTML</span>
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">HTML</span>
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">CSS</span>
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">CSS</span>
 
               </div>
             </div>
@@ -628,16 +682,16 @@
 
           <!-- Project 1 -->
 
-          <!-- Project 2 -->
+          <!-- Project 2 My bookings-->
 
           <div
             class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl"
-            data-aos="zoom-in" data-aos-delay="200">
+            data-aos="zoom-in" data-aos-delay="100">
 
             <!-- Project Image -->
             <div class="relative m-2">
               <img src="assets/project/mybookings.png" alt="E-Commerce Project"
-                class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <!-- Small overlay title -->
               <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
                 M-Commerce Platform
@@ -648,7 +702,7 @@
             <div class="p-6">
               <!-- Title + Icons -->
               <div class="flex items-center justify-between mb-3">
-                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">My Bookings</h3>
+                <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">My Bookings</h3>
                 <div class="flex space-x-3">
 
                   <!-- GitHub link -->
@@ -662,7 +716,7 @@
                 </div>
               </div>
 
-              <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+              <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
                 data-desc>
                 MyBookings is an m-commerce hotel booking Android application that enables users to search and book
                 hotels
@@ -682,30 +736,31 @@
               <!-- Tech Tags -->
               <div class="flex flex-wrap gap-2">
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java</span>
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java</span>
 
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Firebase
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Firebase
                   Firestore</span>
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Firebase
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Firebase
                   Cloud Messaging</span>
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Google
                   Maps SDK</span>
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Google
                   Places API</span>
 
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">ZXing</span>
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">ZXing</span>
                 <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                  class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Google
                   ML Kit</span>
               </div>
             </div>
           </div>
 
+          <!-- Project 2 My bookings -->
 
 
         </div>
@@ -713,69 +768,14 @@
         <div id="clientProjects" class="grid hidden gap-8 md:grid-cols-2">
 
           <!-- Project 1 -->
-          <div
-            class="max-w-2xl mx-auto overflow-hidden transition-all duration-300 shadow-xl bg-white/50 dark:bg-gray-800/85 rounded-2xl hover:shadow-2xl">
 
-            <!-- Project Image -->
-            <div class="relative m-2">
-              <img src="assets/project1.png" alt="E-Commerce Project"
-                class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
-              <!-- Small overlay title -->
-              <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
-                E-Commerce Platform
-              </div>
-            </div>
-
-            <!-- Project Details -->
-            <div class="p-6">
-              <!-- Title + Icons -->
-              <div class="flex items-center justify-between mb-3">
-                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">E-Commerce Platform</h3>
-                <div class="flex space-x-3">
-
-                  <!-- GitHub link -->
-                  <a href="#" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
-                    <img src="assets/github.png" alt="boostrap"
-                      class="w-8 h-8 transition-transform duration-300 hover:scale-110 dark:hidden">
-                    <img src="assets/github_dark.png" alt="boostrap"
-                      class="hidden w-8 h-8 transition-transform duration-300 hover:scale-110 dark:inline-block">
-                  </a>
-                </div>
-              </div>
-
-              <!-- Description -->
-              <p class="mb-4 leading-relaxed text-gray-600 dark:text-gray-300">
-                This is a fully functional e-commerce web application built using Java EE and JSP,
-                with a MySQL database. It includes features such as product listing, product management,
-                and a shopping cart system. Designed with a user-friendly interface and efficient back-end
-                services to provide a seamless shopping experience.
-              </p>
-
-              <!-- Tech Tags -->
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
-                  EE</span>
-                <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JSP</span>
-                <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
-                <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">HTML</span>
-                <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">CSS</span>
-                <span
-                  class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
-              </div>
-            </div>
-          </div>
           <!-- Project 1 -->
         </div>
 
         <!-- View More Button -->
         <div class="mt-12 text-center" data-aos="fade-down">
           <a href="projects.html"
-            class="inline-block px-8 py-3 font-bold text-black transition bg-yellow-500 rounded-full shadow-md hover:bg-yellow-600">
+            class="inline-block px-8 py-3 text-sm font-bold text-black transition bg-yellow-500 rounded-full shadow-md md:text-base hover:bg-yellow-600">
             View More Projects →
           </a>
         </div>
@@ -787,17 +787,17 @@
     <section id="contact" class="px-4 py-0 mb-5 md:py-20 sm:px-6 md:px-10 lg:px-20">
       <div class="max-w-6xl mx-auto lg:px-8">
         <div class="mb-12 text-center" data-aos="fade-down">
-          <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 md:text-5xl dark:text-gray-100">Let's Work
+          <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl dark:text-gray-100">Let's Work
             Together</h2>
-          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+          <p class="mt-4 text-base text-gray-600 md:text-lg dark:text-gray-300">
             Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your ideas to life.
           </p>
         </div>
 
         <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 md:gap-20 lg:gap-24" data-aos="fade-up">
           <div>
-            <h3 class="mb-4 text-3xl font-bold text-gray-800 dark:text-gray-100">Get in touch</h3>
-            <p class="mb-8 text-lg text-justify text-gray-600 dark:text-gray-300">
+            <h3 class="mb-4 text-2xl font-bold text-gray-800 md:text-3xl dark:text-gray-100">Get in touch</h3>
+            <p class="mb-8 text-base text-justify text-gray-600 md:text-lg dark:text-gray-300">
               I'm always open to discussing new opportunities, creative projects, or just having a chat about technology
               and design.
             </p>
@@ -944,12 +944,22 @@
     const toggleBtn = document.getElementById("darkModeToggle");
     const html = document.documentElement;
 
-    // Page load වෙනකොට preference load කරන්න
-    if (localStorage.getItem("theme") === "dark") {
-      html.classList.add("dark");
-      toggleBtn.textContent = "☀️ Light";
+    // Check localStorage first, then fallback to system preference
+    if (localStorage.getItem("theme")) {
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+        toggleBtn.textContent = "☀️ Light";
+      } else {
+        toggleBtn.textContent = "🌙 Dark";
+      }
     } else {
-      toggleBtn.textContent = "🌙 Dark";
+      // If no preference saved → follow system/browser preference
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        html.classList.add("dark");
+        toggleBtn.textContent = "☀️ Light";
+      } else {
+        toggleBtn.textContent = "🌙 Dark";
+      }
     }
 
     toggleBtn.addEventListener("click", () => {
@@ -957,12 +967,17 @@
 
       if (html.classList.contains("dark")) {
         toggleBtn.textContent = "☀️ Light";
-        localStorage.setItem("theme", "dark"); // save preference
+        localStorage.setItem("theme", "dark");
+
       } else {
         toggleBtn.textContent = "🌙 Dark";
-        localStorage.setItem("theme", "light"); // save preference
+        localStorage.setItem("theme", "light");
+
       }
+
+
     });
+
   </script>
 
   <!-- FontAwesome for icons -->

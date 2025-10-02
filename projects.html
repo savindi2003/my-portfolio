@@ -182,6 +182,12 @@
     </script>
 
 
+<button id="scrollTopBtn"
+  class="fixed z-50 hidden p-3 text-yellow-600 transition transform -translate-x-1/2 rounded-full shadow-lg bg-yellow-700/10 backdrop-blur-sm bottom-12 left-1/2 dark:bg-gray-700/10 dark:text-white ">
+  <p>⇡</p>
+</button>
+
+
 
 
   <!-- Project -->
@@ -193,7 +199,7 @@
         <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 md:text-5xl">
           My <span class="text-yellow-500" data-aos="fade-down">Projects</span>
         </h2>
-        <p class="mt-3 text-lg text-gray-600 dark:text-gray-300" data-aos="fade-down">
+        <p class="mt-3 text-sm text-gray-600 md:text-lg dark:text-gray-300" data-aos="fade-down">
           A few projects I've worked on – both academic and for clients.
         </p>
       </div>
@@ -201,11 +207,11 @@
       <!-- Toggle Buttons -->
       <div class="flex justify-center mb-10 space-x-4" data-aos="fade-down" data-aos-delay="100">
         <button id="academicBtn"
-          class="px-6 py-2 font-semibold text-black transition bg-yellow-500 rounded-full shadow-md hover:bg-yellow-600">
+          class="px-6 py-2 text-sm font-semibold text-black transition bg-yellow-500 rounded-full shadow-md hover:bg-yellow-600 md:text-lg">
           Academic Projects
         </button>
         <button id="clientBtn"
-          class="px-6 py-2 font-semibold text-gray-700 transition bg-white rounded-full shadow-md hover:bg-gray-100">
+          class="px-6 py-2 text-sm font-semibold text-gray-700 transition bg-white rounded-full shadow-md hover:bg-gray-100 md:text-lg">
           Client Projects
         </button>
       </div>
@@ -221,15 +227,15 @@
           <div class="relative m-2 overflow-hidden" data-carousel>
             <div class="flex transition-transform duration-500" data-slide-track>
               <img src="assets/project/tarafashion/1.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+             class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/tarafashion/2.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/tarafashion/3.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/tarafashion/4.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                 class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/tarafashion/5.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                 class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
             </div>
 
             <!-- Prev/Next -->
@@ -247,14 +253,14 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Thara Fashion Store</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">Thara Fashion Store</h3>
               <a href="https://github.com/savindi2003/tarafashion" target="_blank"
                 class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
                 <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
               </a>
             </div>
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               This is a fully functional e-commerce web application built with HTML, CSS (Bootstrap), JavaScript, PHP,
               and MySQL.
@@ -274,16 +280,16 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">PHP
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">PHP
               </span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JavaScript</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">MySQL</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">HTML</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">HTML</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">CSS</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">CSS</span>
 
             </div>
           </div>
@@ -300,7 +306,7 @@
           <!-- Project Image -->
           <div class="relative m-2">
             <img src="assets/project/mybookings.png" alt="E-Commerce Project"
-              class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
             <!-- Small overlay title -->
             <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
               M-Commerce Platform
@@ -311,7 +317,7 @@
           <div class="p-6">
             <!-- Title + Icons -->
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">My Bookings</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">My Bookings</h3>
               <div class="flex space-x-3">
 
                 <!-- GitHub link -->
@@ -325,7 +331,7 @@
               </div>
             </div>
 
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               MyBookings is an m-commerce hotel booking Android application that enables users to search and book hotels
               with ease. Built with Firebase Firestore as the backend, the app includes hotel listings, booking
@@ -343,25 +349,25 @@
             <!-- Tech Tags -->
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java</span>
 
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Firebase
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Firebase
                 Firestore</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Firebase
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Firebase
                 Cloud Messaging</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Google
                 Maps SDK</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Google
                 Places API</span>
 
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">ZXing</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">ZXing</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Google
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Google
                 ML Kit</span>
             </div>
           </div>
@@ -377,13 +383,13 @@
           <div class="relative m-2 overflow-hidden" data-carousel>
             <div class="flex transition-transform duration-500" data-slide-track>
               <img src="assets/project/freshmart/1.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                 class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/freshmart/2.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/freshmart/3.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/freshmart/4.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-contain object-center w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
 
             </div>
 
@@ -402,7 +408,7 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">FreshMart</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">FreshMart</h3>
               <a href="https://github.com/savindi2003/freshmart" target="_blank"
                 class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
@@ -410,7 +416,7 @@
               </a>
             </div>
 
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               FreshMart is a standalone POS (Point of Sale) system developed in Java SE (Ant build) with a Java Swing UI.
               It uses MySQL for data storage and Jasper Reports for generating detailed reports. The application
@@ -427,12 +433,12 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java SE
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java SE
               </span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">MySQL</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Jasper
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Jasper
                 Report</span>
 
             </div>
@@ -450,11 +456,11 @@
           <div class="relative m-2 overflow-hidden" data-carousel>
             <div class="flex transition-transform duration-500" data-slide-track>
               <img src="assets/project/ezybit/ezybit1.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/ezybit/ezybit2.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/ezybit/exybit3.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
 
             </div>
 
@@ -473,14 +479,14 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Ezy Bid</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">Ezy Bid</h3>
               <a href="#" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
                 <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
               </a>
             </div>
 
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               Ezy Bid is a real-time online auction web application developed using Java EE (EJB, JMS, WebSocket, and
               JSP). The system allows users to register, log in, and participate in live auctions where bids are updated
@@ -497,22 +503,22 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java
                 EE</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">EJB</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">EJB</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JMS</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JMS</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">WebSocket</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">WebSocket</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JSP</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JSP</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">HTML</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">HTML</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">CSS</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">CSS</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JavaScript</span>
 
             </div>
           </div>
@@ -529,7 +535,7 @@
           <!-- Project Image -->
           <div class="relative m-2">
             <img src="assets/project/chatme.png" alt="E-Commerce Project"
-              class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              class="object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
             <!-- Small overlay title -->
             <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
               Cross Platform Mobile App
@@ -539,7 +545,7 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">ChatMe App</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">ChatMe App</h3>
               <a href="https://github.com/savindi2003/chatme-app-mobile" target="_blank"
                 class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
@@ -547,7 +553,7 @@
               </a>
             </div>
 
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               ChatMe is a real-time chat application developed with React Native (Expo) for the mobile front-end and
               Java EE Servlets for the backend. The app enables users to chat with friends, send and delete messages,
@@ -563,20 +569,20 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">React
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">React
                 Native
               </span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Expo</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Expo</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JavaScript</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">MySQL</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Rest
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Rest
                 API</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java
                 EE</span>
 
             </div>
@@ -594,13 +600,13 @@
           <div class="relative m-2 overflow-hidden" data-carousel>
             <div class="flex transition-transform duration-500" data-slide-track>
               <img src="assets/project/nationalBak/1.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/nationalBak/2.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/nationalBak/3.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/nationalBak/4.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
 
             </div>
 
@@ -619,7 +625,7 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">National Bank - Banking System</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">National Bank</h3>
               <a href="https://github.com/savindi2003/nationalbank-system" target="_blank"
                 class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
@@ -627,7 +633,7 @@
               </a>
             </div>
 
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               The National Bank Core Banking System is developed using Enterprise JavaBeans (EJB) with a strong focus on
               EJB Timer Services to automate time-sensitive banking operations. The system supports multiple user roles
@@ -651,21 +657,21 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java
                 EE</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">EJB</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">EJB</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">EJB
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">EJB
                 Timer Service</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java
                 Transaction API</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JAAS
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JAAS
                 Security</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">MySQL</span>
             </div>
           </div>
         </div>
@@ -681,11 +687,11 @@
           <div class="relative m-2 overflow-hidden" data-carousel>
             <div class="flex transition-transform duration-500" data-slide-track>
               <img src="assets/project/shoueshepara/1.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/shoueshepara/2.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/shoueshepara/3.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
 
             </div>
 
@@ -704,13 +710,13 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">ShoeSpere</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">ShoeSpere</h3>
               <a href="#" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
                 <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
               </a>
             </div>
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               ShoeSpere is a full-featured e-commerce web application developed with Java EE 7. The system provides core
               shopping functionalities including product listing, shopping cart, session-based cart (available even for
@@ -731,20 +737,20 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java
                 EE</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Servlets</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Servlets</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Hibernate
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Hibernate
                 ORM</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">MySQL</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">PayHere
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">PayHere
                 API</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JavaScript</span>
             </div>
           </div>
         </div>
@@ -759,7 +765,7 @@
           <!-- Project Image -->
           <div class="relative m-2">
             <img src="assets/project/hudrogrow1.png" alt="E-Commerce Project"
-              class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              class="object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
             <!-- Small overlay title -->
             <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
               IoT-based plant water monitoring system
@@ -770,7 +776,7 @@
           <div class="p-6">
             <!-- Title + Icons -->
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">HydroGrow</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">HydroGrow</h3>
               <div class="flex space-x-3">
 
                 <!-- GitHub link -->
@@ -785,7 +791,7 @@
             </div>
 
             <!-- Description -->
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               HydroGrow is an IoT-based plant water monitoring system that integrates hardware sensors, a backend
               server, and a mobile application to provide real-time plant health insights. The system consists of three
@@ -810,15 +816,15 @@
             <!-- Tech Tags -->
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">React
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">React
                 Native
               </span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Arduino</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Arduino</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">ESP
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">ESP
                 32</span>
 
             </div>
@@ -833,7 +839,7 @@
           <!-- Project Image -->
           <div class="relative m-2">
             <img src="assets/project/nootbook.png" alt="E-Commerce Project"
-              class="object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+              class="object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
             <!-- Small overlay title -->
             <div class="absolute px-3 py-1 text-sm text-white rounded-md bottom-4 left-4 bg-black/50">
               Android App
@@ -844,7 +850,7 @@
           <div class="p-6">
             <!-- Title + Icons -->
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Note Book App</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">Note Book App</h3>
               <div class="flex space-x-3">
 
                 <!-- GitHub link -->
@@ -859,7 +865,7 @@
             </div>
 
             <!-- Description -->
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               Note Book is a lightweight Android application that allows users to create, save, and manage personal
               notes directly on their mobile device. The app uses SQLite as its local database, ensuring fast and
@@ -875,12 +881,12 @@
             <!-- Tech Tags -->
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Android
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Android
               </span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">SQLite</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">SQLite</span>
 
 
             </div>
@@ -896,11 +902,11 @@
           <div class="relative m-2 overflow-hidden" data-carousel>
             <div class="flex transition-transform duration-500" data-slide-track>
               <img src="assets/project/adyapanaInstitute/1.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/adyapanaInstitute/2.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/adyapanaInstitute/3.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
 
             </div>
 
@@ -919,14 +925,14 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Adyapana Institute</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">Adyapana Institute</h3>
               <a href="https://github.com/savindi2003/adyapana-institute" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
                 <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
               </a>
             </div>
             
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               The Student Management System for Adyapana Institute is a Java SE standalone application developed with Swing for the graphical user interface and MySQL for the database. This system is designed to manage various aspects of an A/L tuition center, including student registration, class enrollment, attendance tracking, fee management, and teacher assignment. It allows administrators to add new students, assign them to classes, record daily attendance, monitor class fees, and allocate teachers to specific classes. The application uses JDBC to connect to the MySQL database, ensuring efficient storage and retrieval of data. Its modular structure separates the database operations, business logic, and user interface, providing a user-friendly and organized solution for managing all administrative tasks of the institute.
             </p>
@@ -937,14 +943,14 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java
                 SE</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Swing</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Swing</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">MySQL</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JDBC</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JDBC</span>
               
             </div>
           </div>
@@ -962,13 +968,13 @@
             <div class="flex transition-transform duration-500" data-slide-track>
 
               <img src="assets/project/globemed/1.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/globemed/2.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/globemed/3.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/globemed/4.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
 
             </div>
 
@@ -987,14 +993,14 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">GlobeMed</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">GlobeMed</h3>
               <a href="https://github.com/savindi2003/globemed" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
                 <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
               </a>
             </div>
             
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               The Healthcare Management System for Globe Med is a Java SE desktop application designed to streamline the operations of a healthcare organization. The system implements object-oriented design patterns for modular and maintainable code. It provides comprehensive functionalities including patient record management, appointment scheduling, billing and insurance claim processing, report generation using JasperReports, and security management to ensure data confidentiality. The application uses MySQL as the backend database, and its structured design allows healthcare staff to efficiently manage patient information, track appointments, handle billing, and generate detailed reports while maintaining high standards of security and reliability.
             </p>
@@ -1005,16 +1011,16 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Java
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Java
                 SE</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Swing</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Swing</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">MySQL</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">MySQL</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Jasper Reports</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Jasper Reports</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">OODP</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">OODP</span>
               
             </div>
           </div>
@@ -1031,11 +1037,11 @@
           <div class="relative m-2 overflow-hidden" data-carousel>
             <div class="flex transition-transform duration-500" data-slide-track>
               <img src="assets/project/gunglerun/1.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/gunglerun/2.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
               <img src="assets/project/gunglerun/3.png"
-                class="flex-shrink-0 object-cover w-full h-64 border-2 border-gray-200 shadow-sm rounded-xl">
+                class="flex-shrink-0 object-cover w-full border-2 border-gray-200 shadow-sm dark:border-gray-600 rounded-xl">
 
 
             </div>
@@ -1055,13 +1061,13 @@
           <!-- Project Details (Separate, not sliding) -->
           <div class="p-6">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Jungle Run Game</h3>
+              <h3 class="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-100">Jungle Run Game</h3>
               <a href="#" target="_blank" class="text-gray-500 transition hover:text-yellow-500">
                 <img src="assets/github.png" class="w-8 h-8 dark:hidden">
                 <img src="assets/github_dark.png" class="hidden w-8 h-8 dark:inline-block">
               </a>
             </div>
-            <p class="text-sm leading-relaxed text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
+            <p class="text-sm text-justify text-gray-600 transition-all duration-300 ease-in-out dark:text-gray-300 line-clamp-3"
               data-desc>
               This is a simple running game developed using HTML, CSS, and JavaScript. The game features sprite sheet animations for smooth character movements and allows the player to change the background dynamically. The main objective is to avoid obstacles while running, and the game ends with a game over whenever the character collides with an object. The project demonstrates interactive web development skills, including animation, event handling, and dynamic UI updates, making it a fun and engaging application for users.
             </p>
@@ -1072,14 +1078,14 @@
 
             <div class="flex flex-wrap gap-2">
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">Spritesheet Animation
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">Spritesheet Animation
                 </span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">HTML</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">HTML</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">CSS</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">CSS</span>
               <span
-                class="px-3 py-1 text-sm text-yellow-700 bg-yellow-100 rounded-full dark:bg-yellow-500 dark:text-black">JavaScript</span>
+                class="px-3 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full md:text-sm dark:bg-yellow-500 dark:text-black">JavaScript</span>
               
             </div>
           </div>
@@ -1113,6 +1119,25 @@
     class="py-6 text-center text-gray-600 transition-colors duration-300 bg-gray-100 dark:bg-gray-800 dark:text-gray-300">
     <p class="text-sm font-medium">&copy; 2025 Savindi Duleesha. All rights reserved.</p>
   </footer>
+
+  <!-- scroll up -->
+   <script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  // Show button only when user scrolls down
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.remove("hidden");
+    } else {
+      scrollTopBtn.classList.add("hidden");
+    }
+  });
+
+  // Scroll to top when button clicked
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 
 
   
